@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "flipanalyse",
+    "title": "Flipanalyse",
+    "summary": "An e-commerce analytics platform for Flipkart sellers.",
+    "description": "Flipanalyse is a comprehensive analytics platform designed to help Flipkart sellers make data-driven decisions. It provides insights into sales trends, product performance, and customer behavior. Built with modern web technologies, the platform offers real-time data visualization and predictive analytics to optimize business strategies.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Analytics"],
+    "type": "Web App",
+    "featured": true,
+    "liveUrl": "",
+    "githubUrl": "https://github.com/nmit-1nt22cs206/Flipanalyse_22CS8"
+  },
+  {
+    "slug": "ai-voice-therapist",
+    "title": "AI Voice Therapist",
+    "summary": "An AI-powered voice therapy application for mental wellness.",
+    "description": "AI Voice Therapist is an innovative mental health application that uses advanced AI and voice recognition technology to provide therapeutic conversations. The app offers personalized support, emotional analysis, and guided meditation sessions. It creates a safe space for users to express their feelings and receive compassionate AI-driven responses.",
+    "techStack": ["Python", "AI/ML", "Speech Recognition", "NLP"],
+    "type": "AI Application",
+    "featured": true,
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "slug": "internet-side-eye",
+    "title": "Internet Side Eye",
+    "summary": "A browser extension that monitors your browsing habits.",
+    "description": "Internet Side Eye is a fun and functional browser extension that tracks and analyzes your internet browsing patterns. It provides insights into time spent on different websites, productivity metrics, and gentle reminders to take breaks. The extension features a playful 'side eye' character that reacts to your browsing behavior, making productivity tracking both engaging and informative.",
+    "techStack": ["JavaScript", "Chrome Extension API", "React"],
+    "type": "Browser Extension",
+    "featured": false,
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "summary": "A modern portfolio website with draggable modals.",
+    "description": "This is my personal portfolio website built with Next.js and Tailwind CSS. It features interactive draggable modals, smooth animations, and a clean minimalist design. The site includes sections for projects, about me, links to social media, and a contact form. Built with performance and user experience in mind.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "type": "Website",
+    "featured": false,
+    "liveUrl": "",
+    "githubUrl": ""
+  }
+]

@@ -1,65 +1,99 @@
+import Link from "next/link";
 import Image from "next/image";
+import SunToggle from "../components/SunToggle";
+import MuteToggle from "../components/MuteToggle";
+import NavIconButton from "../components/NavIconButton";
+import ModalContainer from "../components/ModalContainer";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <ModalContainer />
+    <main className="min-h-screen">
+
+      {/* ================= HERO SECTION ================= */}
+      <section className="relative py-12 px-6 min-h-screen flex items-center justify-center">
+
+        {/* Decorative (clickable) sun and mute toggle */}
+        <div className="absolute top-8 left-8 z-20 flex items-center gap-3">
+          <MuteToggle />
+          <SunToggle />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Center card */}
+        <div className="relative z-20 w-full max-w-[800px] mx-auto">
+          <div className="relative w-full aspect-[800/560] rounded-2xl bg-white dark:bg-[#BBBBBB] shadow-2xl flex flex-col">
+            <div className="h-12 rounded-t-2xl bg-[#7077FF]/85 dark:bg-[#5A4875]" />
+
+            <div className="flex-1 p-12 text-center flex flex-col items-center justify-center">
+              <h1 className="flex items-end justify-center gap-6 font-extrabold leading-none">
+                  <span className="text-black dark:text-black text-5xl sm:text-6xl">hi</span>
+                  <span className="text-[#D34F4F]/90 dark:text-[#844FD3] text-[56px] sm:text-[72px]">I&apos;m Tithi</span>
+                </h1>
+                <span className=" text-zinc-600 dark:text-black text-xl sm:text-10xs"> developer, content creator</span>
+
+
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-8">
+                <NavIconButton modalType="about" label="about">
+                  <IconInfo />
+                </NavIconButton>
+
+                <NavIconButton modalType="links" label="links">
+                  <IconLink />
+                </NavIconButton>
+
+                <NavIconButton modalType="projects" label="projects">
+                  <IconProjects />
+                </NavIconButton>
+
+                <NavIconButton modalType="faq" label="faq">
+                  <IconFaq />
+                </NavIconButton>
+
+                <NavIconButton modalType="contact" label="contacts">
+                  <IconContact />
+                </NavIconButton>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
+    </>
+  ); 
+}
+
+/* NavIcon moved to components/NavIcon.tsx (client component) */
+
+/* ================= ICONS ================= */
+
+function IconInfo() {
+  return (
+    <Image src="/about.png" width="78" height="78" alt="info icon" />
+  );
+}
+
+function IconLink() {
+  return (
+    <Image src="/link.png" width="78" height="78" alt="link icon" />
+
+  );
+}
+
+function IconProjects() {
+  return (
+    <Image src="/projects.png" width="58" height="58" alt="projects icon" />
+  );
+}
+
+function IconFaq() {
+  return (
+    <Image src="/faq.png" width="78" height="78" alt="faq icon" />
+  );
+}
+
+function IconContact() {
+  return (
+    <Image src="/contacts.png" width="78" height="78" alt="contact icon" />
   );
 }

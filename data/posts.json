@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "smart-attendance-system",
+    "title": "Smart Attendance System",
+    "summary": "A web app to manage attendance efficiently.",
+    "description": "Longer description goes here. Explain problem, your solution, features, challenges, and what you learned.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind"],
+    "type": "Web App",
+    "featured": true,
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example/repo"
+  },
+  {
+    "slug": "portfolio-platform",
+    "title": "Portfolio Platform",
+    "summary": "This portfolio site template with light/dark theme.",
+    "description": "Explain how you built it, key components, and next improvements.",
+    "techStack": ["Next.js", "Tailwind"],
+    "type": "Website",
+    "featured": false,
+    "liveUrl": "",
+    "githubUrl": ""
+  }
+]
