@@ -246,7 +246,7 @@ export default function ModalContainer() {
       />
 
       <textarea
-        rows="3"
+        rows={3}
         placeholder="Your message"
         className="w-full px-3 py-2 text-xs rounded-md border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-400 dark:focus:ring-zinc-600 resize-none"
       />
